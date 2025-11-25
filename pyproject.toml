@@ -3,9 +3,9 @@ requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "blincawave"
+name = "blincs"
 version = "0.1.0"
-description = "BLINCAwave — Boundary Layer Interacting with Capping Inversion and Atmospheric Wave Dynamics"
+description = "BLinCS — (B)oundary (L)ayer (in)teracting with (C)apping Inversion and (S)tratified Atmosphere"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -36,15 +36,15 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/blincawave"]
+packages = ["src/blincs"]
 
 [tool.pytest.ini_options]
 addopts = "-q"
 pythonpath = ["src"]
 
-# Optional CLI: enables a `blincawave` command if main_run.py exposes main()
+# Optional CLI: enables a `blincs` command if main_run.py exposes main()
 # [project.scripts]
-# blincawave = "blincawave.main_run:main"
+# blincs = "blincs.main_run:main"
 
 [tool.ruff]
 line-length = 100

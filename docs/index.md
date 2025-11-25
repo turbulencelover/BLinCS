@@ -1,6 +1,6 @@
 # 🌊 BLINCAwave
 
-**BLINCAwave** — *Boundary Layer Interacting with Capping Inversion and Atmospheric Waves* —  
+**BLinCS**: **B**oundary **L**ayer **in**teracting with **C**apping Inversion and **S**tratified Atmosphere —  
 is a modular solver for studying atmospheric boundary layer responses to internal gravity waves and turbine‑scale forcings.
 
 - **Wave–mean flow coupling**

@@ -6,12 +6,12 @@ The main script where the simulation are run and plotted
 '''
 import numpy as np
 import matplotlib.pyplot as plt
-import blincawave
+import blincs
 # --- import both versions ---
-from blincawave.blwave_simulation import simulate_BLwave
-from blincawave.vel_base import LogProfile
-from blincawave.forcing import ForcingBase, NonlinearForcing, BoxFarmGeom, TurbineBoxForcing
-from blincawave.plotting import plot_fields_fixedz, compare_fields_fixedz, plot_field_xz
+from blincs.blwave_simulation import simulate_BLwave
+from blincs.vel_base import LogProfile
+from blincs.forcing import ForcingBase, NonlinearForcing, BoxFarmGeom, TurbineBoxForcing
+from blincs.plotting import plot_fields_fixedz, compare_fields_fixedz, plot_field_xz
 import time
 
 # ---------------- Parameters ----------------

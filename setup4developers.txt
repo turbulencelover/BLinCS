@@ -1,12 +1,12 @@
-Getting Started with BLINCAwave
+Getting Started with BLinCS
 =================================
 
-Follow these steps to set up and run BLINCAwave on your computer.
+Follow these steps to set up and run BLinCS on your computer.
 
 1. Clone the repository
 -----------------------
-    git clone https://github.com/turbulencelover/BLINCAwave.git
-    cd BLINCAwave
+    git clone https://github.com/turbulencelover/BLinCS.git
+    cd BLinCS
 
 2. Create and activate a Python virtual environment
 ---------------------------------------------------
@@ -21,7 +21,7 @@ Windows (PowerShell):
 
 You should now see `(.venv)` at the start of your terminal prompt.
 
-3. Install BLINCAwave and dependencies
+3. Install BLinCS and dependencies
 --------------------------------------
 With the environment active:
     pip install -e .
@@ -33,23 +33,23 @@ If you plan to use Spyder:
 4. Verify the installation
 --------------------------
 Still inside the environment:
-    python -c "import blincawave, sys; print(blincawave.__file__); print(sys.executable)"
+    python -c "import blincs, sys; print(blincs.__file__); print(sys.executable)"
 
 You should see something like:
-    .../BLINCAwave/src/blincawave/__init__.py
-    .../BLINCAwave/.venv/bin/python
+    .../BLinCS/src/blincs/__init__.py
+    .../BLinCS/.venv/bin/python
 
 5. (Optional) Using Spyder
 --------------------------
 1. Open Spyder → Tools → Preferences → Python Interpreter
 2. Choose “Use the following Python interpreter”
 3. Browse to:
-   - macOS/Linux → .../BLINCAwave/.venv/bin/python
-   - Windows → .../BLINCAwave/.venv/Scripts/python.exe
+   - macOS/Linux → .../BLinCS/.venv/bin/python
+   - Windows → .../BLinCS/.venv/Scripts/python.exe
 4. Apply → OK → restart the IPython console.
    Then run:
-       import blincawave
-       print(blincawave.__file__)
+       import blincs
+       print(blincs.__file__)
 
 6. Run an example
 -----------------

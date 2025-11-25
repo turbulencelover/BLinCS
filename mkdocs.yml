@@ -1,7 +1,7 @@
 
-site_name: BLINCAwave
+site_name: BLinCS
 site_description: "Boundary Layer Interacting with Capping Inversion and Atmospheric Waves"
-repo_url: https://github.com/turbulencelover/BLINCAwave
+repo_url: https://github.com/turbulencelover/BLinCS
 theme:
   name: material
   features:

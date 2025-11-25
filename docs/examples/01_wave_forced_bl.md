@@ -1,9 +1,9 @@
 # Example 1 — Wave‑forced Boundary Layer
 
 ```python
-from blincawave.blwave_simulation import simulate_BLwave
-from blincawave.forcing import TurbineBoxForcing, BoxFarmGeom
-from blincawave.vel_base import LogProfile
+from blincs.blwave_simulation import simulate_BLwave
+from blincs.forcing import TurbineBoxForcing, BoxFarmGeom
+from blincs.vel_base import LogProfile
 
 forcing = TurbineBoxForcing(BoxFarmGeom(ax=20000, az=100, zh=100))
 background = LogProfile(U_top=20.0, z0=1.0, ztop=1000.0)

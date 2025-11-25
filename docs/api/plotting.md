@@ -1,1 +1,1 @@
-::: blincawave.plotting
+::: blincs.plotting

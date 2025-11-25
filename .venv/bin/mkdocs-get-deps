@@ -1,4 +1,4 @@
-#!/Users/hkafiaba/Documents/ResearchProjs/WindFarm/Codes/BLINCAwave/.venv/bin/python
+#!/Users/hkafiaba/Documents/ResearchProjs/WindFarm/Codes/BLinCS/.venv/bin/python
 import sys
 from mkdocs_get_deps.__main__ import cli
 if __name__ == '__main__':
