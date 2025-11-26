@@ -69,7 +69,7 @@ plot_field_xz(x1, z1, u1/Uh, field_name="u",
               )
 
 plot_fields_fixedz(x1, z1, {"u_r": u1/Uh}, 
-                z_target=[50, 100, 500], xlim=(-100, 400),
+                z_target=[50, 100, 500, 700], xlim=(-100, 400),
                 units={"u_r":"m/s"})
         
 plt.show()
