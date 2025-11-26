@@ -33,6 +33,7 @@ nav:
       - Plotting Tools: api/plotting.md
       - Vertical Derivatives: api/zdiff.md
   - Contributing: contributing.md
+  - Developer Guide: developer_guide.md
 plugins:
   - search
   - mkdocstrings:
