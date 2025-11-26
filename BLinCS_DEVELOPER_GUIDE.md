@@ -61,7 +61,24 @@ This avoids activation issues.
 
 ---
 
-## ⚠️ 3.1 Important Note About Virtual Environments
+
+## 4. 📥 Install BLinCS in editable mode
+
+```bash
+./.venv/bin/python -m pip install -e .
+```
+
+Test:
+
+```bash
+./.venv/bin/python -c "import blincs; print(blincs.__file__)"
+```
+
+---
+
+## ⚠️ 4.1 Important Note About Virtual Environments and Installing BLinCS
+
+if you do not change or recreate `.venv`, you do **NOT** need to reinstall BLinCS. However, you **MUST** reinstall BLinCS whenever you create or change the `.venv` virtual environment, because:
 
 A new or recreated `.venv` starts empty — no BLinCS, no MkDocs.
 If VS Code or Spyder switches interpreters, you may suddenly lose access to `blincs`.
@@ -98,20 +115,6 @@ Must show something like:
 
 ```
 BLinCS/.venv/bin/python
-```
-
----
-
-## 4. 📥 Install BLinCS in editable mode
-
-```bash
-./.venv/bin/python -m pip install -e .
-```
-
-Test:
-
-```bash
-./.venv/bin/python -c "import blincs; print(blincs.__file__)"
 ```
 
 ---
