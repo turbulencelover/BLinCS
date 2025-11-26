@@ -50,14 +50,13 @@ Windows:
 .\.venv\Scripts\activate
 ```
 
-### Method B — Recommended: Use full paths
-
+### Method B 
 ```bash
 ./.venv/bin/python
 ./.venv/bin/mkdocs
 ```
 
-This avoids activation issues.
+This avoids activation issues. For the rest of this guide, we will use Method A assuming the venv is activated.
 
 ---
 
@@ -65,13 +64,13 @@ This avoids activation issues.
 ## 4. 📥 Install BLinCS in editable mode
 
 ```bash
-./.venv/bin/python -m pip install -e .
+python -m pip install -e .
 ```
 
 Test:
 
 ```bash
-./.venv/bin/python -c "import blincs; print(blincs.__file__)"
+python -c "import blincs; print(blincs.__file__)"
 ```
 
 ---
@@ -86,7 +85,7 @@ If VS Code or Spyder switches interpreters, you may suddenly lose access to `bli
 ### ✔ After creating or changing `.venv`, you MUST reinstall BLinCS:
 
 ```bash
-./.venv/bin/python -m pip install -e .
+python -m pip install -e .
 ```
 
 Or in VS Code:
@@ -122,7 +121,7 @@ BLinCS/.venv/bin/python
 ## 5. ▶️ Run a quick simulation test
 
 ```bash
-./.venv/bin/python - << 'EOF'
+python - << 'EOF'
 from blincs.blwave_simulation import simulate_BLwave
 from blincs.vel_base import LogProfile
 from blincs.forcing import BoxFarmGeom, TurbineBoxForcing
@@ -145,7 +144,7 @@ EOF
 ## 6. 🧪 Running tests
 
 ```bash
-./.venv/bin/python tests/NonlinearEffects/<test>.py
+python tests/NonlinearEffects/<test>.py
 ```
 
 ---
@@ -167,13 +166,13 @@ Because you installed in editable mode, changes take effect immediately.
 Install doc deps:
 
 ```bash
-./.venv/bin/python -m pip install -r docs/requirements.txt
+python -m pip install -r docs/requirements.txt
 ```
 
 Serve docs:
 
 ```bash
-./.venv/bin/mkdocs serve
+mkdocs serve
 ```
 
 Visit:
@@ -256,8 +255,8 @@ git pull
 If deps changed:
 
 ```bash
-./.venv/bin/python -m pip install -e .
-./.venv/bin/python -m pip install -r docs/requirements.txt
+python -m pip install -e .
+python -m pip install -r docs/requirements.txt
 ```
 
 ---
