@@ -88,9 +88,9 @@ def simulate_BLwave(
     cD4 /= dz**4
 
     U0D2 = np.zeros((5, Nz), dtype=complex)
-    U0D2[1, :] = U0z
+    U0D2[1, 1:] = U0z[:-1]
     U0D2[2, :] = -2 * U0z
-    U0D2[3, :] = U0z
+    U0D2[3, :-1] = U0z[1:]
     U0D2 /= dz**2
 
     nu_t = np.full((5, Nz), float(nu_turb))
